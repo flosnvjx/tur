@@ -1,0 +1,25 @@
+diff --git a/Makefile b/Makefile
+index e196a37..3ff8a05 100644
+--- a/Makefile
++++ b/Makefile
+@@ -14,7 +14,7 @@ CFLAGS = $(RPM_OPT_FLAGS) $(EXTRA_CFLAGS) -DHAVE_CONFIG_H -I .
+ CFLAGS_OPT = $(CFLAGS) -O3
+ INSTALL ?= install
+ INSTALLFLAGS = -s
+-prefix = $(DESTDIR)/usr
++prefix = @TERMUX_PREFIX@
+ INSTALLDIR = $(prefix)/bin
+ #INSTALLDIR = $(DESTDIR)/bin
+ INSTALLLIBDIR = $(prefix)/$(LIB)
+@@ -34,9 +34,9 @@ OBJECTS = random.o frandom.o fmt_no.o find_nonzero.o
+ FNZ_HEADERS = $(SRCDIR)/find_nonzero.h $(SRCDIR)/archdep.h $(SRCDIR)/ffs.h
+ DDR_HEADERS = config.h $(SRCDIR)/random.h $(SRCDIR)/frandom.h $(SRCDIR)/list.h $(SRCDIR)/fmt_no.h $(SRCDIR)/find_nonzero.h $(SRCDIR)/archdep.h $(SRCDIR)/ffs.h $(SRCDIR)/fstrim.h $(SRCDIR)/ddr_plugin.h $(SRCDIR)/ddr_ctrl.h $(SRCDIR)/splice.h $(SRCDIR)/fallocate64.h $(SRCDIR)/pread64.h
+ DOCDIR = $(prefix)/share/doc/packages
+-INSTASROOT = -o root -g root
++INSTASROOT =
+ LIB = lib
+-LIBDIR = /usr/$(LIB)
++LIBDIR = @TERMUX_PREFIX@/lib
+ COMPILER = $(shell $(CC) --version | head -n1)
+ ID = $(shell git describe --tags || cat REL-ID)
+ DEFINES = -DVERSION=\"$(VERSION)\"  -D__COMPILER__="\"$(COMPILER)\"" -DID=\"$(ID)\" # -DPLUGSEARCH="\"$(LIBDIR)\""
