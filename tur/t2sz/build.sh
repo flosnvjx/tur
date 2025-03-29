@@ -1,0 +1,10 @@
+TERMUX_PKG_HOMEPAGE=https://github.com/martinellimarco/t2sz
+TERMUX_PKG_DESCRIPTION="Utility for creating multi-frame zstd-compressed files and member-aligned zstd-compressed tarballs"
+TERMUX_PKG_LICENSE="GPL-3.0"
+TERMUX_PKG_MAINTAINER="@flosnvjx"
+TERMUX_PKG_VERSION=1.1.2
+TERMUX_PKG_SRCURL="https://github.com/martinellimarco/t2sz/archive/v${TERMUX_PKG_VERSION}.tar.gz"
+TERMUX_PKG_SHA256=33b3a6ebb1887ba8372545f0b4cf2277a2853fd1c7143a4823cb4a6b6ff7f556
+TERMUX_PKG_DEPENDS="zstd"
+TERMUX_PKG_FORCE_CMAKE=true
+TERMUX_PKG_AUTO_UPDATE=true
