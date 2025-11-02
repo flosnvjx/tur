@@ -1,4 +1,4 @@
-#TERMUX_PKG_HOMEPAGE=https://github.com/fastcat/tarix
+TERMUX_PKG_HOMEPAGE="https://salsa.debian.org/debian/mdf2iso"
 TERMUX_PKG_DESCRIPTION="Utility to convert an Alcohol 120% mdf image"
 TERMUX_PKG_LICENSE="GPL-2.0"
 TERMUX_PKG_MAINTAINER="@flosnvjx, @termux-user-repository"
