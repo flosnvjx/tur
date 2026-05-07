@@ -3,7 +3,7 @@ TERMUX_PKG_DESCRIPTION="Coding agent for DeepSeek models that runs in your termi
 TERMUX_PKG_LICENSE="MIT"
 TERMUX_PKG_MAINTAINER="@flosnvjx"
 TERMUX_PKG_VERSION="0.8.14"
-TERMUX_PKG_SRCURL="https://github.com/Hmbown/DeepSeek-TUI/archive/refs/tags/v$TERMUX_PKG_VERSION"
+TERMUX_PKG_SRCURL="https://github.com/Hmbown/DeepSeek-TUI/archive/refs/tags/v$TERMUX_PKG_VERSION.tar.gz"
 TERMUX_PKG_SHA256=SKIP_CHECKSUM
 TERMUX_PKG_BUILD_IN_SRC=true
 
